@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NHTSA Crash Data</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">  
+      <h1> 5,930,496</h1>  
+        <p>motor vehicle crashes occured in the U.S in 2023</p>
+      </div>
+
+      <div class="stats">
+      <h2>40,990</h2>
+      <p>number of fatalities from these accidents</p>
+
+      <h2>38,500 </h2>
+      <p>of these deaths were attributable to human error</p>
+
+      <h2>1,105</h2>   
+      <p>cyclists were killed in traffic accidents across the U.S</p>
+     </div>   
+      sources: NHTSA
+      <a href="https://www.nhtsa.gov/press-releases/2022-traffic-deaths-2023-early-estimates">NHTSA 2023 1</a>
+      <a href="https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813560">NHTSA Crash stats</a>
+    </div>
+    <svg id="jsonD" class="d3" width="80" height="50"></svg>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+
+      <script src="script.js"></script>
+
+  </body>
+</html>
