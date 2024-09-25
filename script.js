@@ -11,10 +11,6 @@ d3.json("https://crashviewer.nhtsa.dot.gov/CrashAPI/crashes/GetCrashesByVehicle?
       
         const color = d3.scaleOrdinal(d3.schemeCategory10);
       
-  
-        const links = data.links.map(d => ({...d}));
-        const nodes = data.nodes.map(d => ({...d}));
-      
         const simulation = d3.forceSimulation(nodes)
             .force("link", d3.forceLink(links).id(d => d.id))
             .force("charge", d3.forceManyBody())
